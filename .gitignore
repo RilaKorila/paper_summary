@@ -1,3 +1,4 @@
 config.env
 
 paper_summary_env/
+__pycache__/
