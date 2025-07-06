@@ -78,13 +78,10 @@ python main.py https://www.nature.com/articles/s41586-023-06924-6
 ---
 title: "論文タイトル"
 authors: [著者名]
-venue: ""
 year: 2025
-tags: ["AI/ML", "LLM", "author/著者名"]
+tags: []
 status: "未読"
-thumbnail: 
 pdf: "URL"
-aliases: []
 ---
 
 ## 著者

@@ -32,13 +32,10 @@ def create_obsidian_template(paper_info, summary=None, keywords=None):
     md_content = f"""---
 title: "{paper_info['title']}"
 authors: [{authors_str}]
-venue: ""
 year: {year}
 tags: [{tags_str}]
 status: "未読"
-thumbnail: 
 pdf: "{paper_info['url']}"
-aliases: []
 ---
 
 {summary}
