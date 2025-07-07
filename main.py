@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # 6. ObsidianのVault内に保存
     vault_path = Path.home() / "ObsidianVault" / "Papers"
     vault_path.mkdir(parents=True, exist_ok=True)
-    filename = f"{paper_info['title'].replace(' ', '_').replace('/', '_')}.md"
+    filename = f"{paper_info['title'].replace('/', '_')}.md"
     with open(vault_path / filename, "w", encoding='utf-8') as f:
         f.write(md_content)
 
