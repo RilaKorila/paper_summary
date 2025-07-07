@@ -12,7 +12,7 @@ if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 
 # Gemini Model設定
-GEMINI_MODEL = 'gemini-1.5-flash'
+GEMINI_MODEL = 'gemini-2.5-flash'
 
 def generate_summary_with_gemini(paper_info, url):
     """Gemini APIを使って論文の要約を生成"""
