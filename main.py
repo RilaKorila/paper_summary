@@ -14,14 +14,6 @@ def create_obsidian_template(paper_info, summary=None, keywords=None):
     authors_str = ', '.join(paper_info['authors']) if paper_info['authors'] else ""
     # 年号の取得
     year = paper_info.get('year', date.today().year)
-
-    # タグの構築
-    tags = []    
-    # キーワードのタグ
-    if keywords:
-        tags.extend(keywords)
-    # タグ文字列の作成
-    tags_str = ', '.join([f'"{tag}"' for tag in tags]) if tags else ""
     
     # 著者リンクの作成（Obsidianの内部リンク形式）
     author_links = ""
@@ -33,7 +25,6 @@ def create_obsidian_template(paper_info, summary=None, keywords=None):
 title: "{paper_info['title']}"
 authors: [{authors_str}]
 year: {year}
-tags: [{tags_str}]
 status: "未読"
 pdf: "{paper_info['url']}"
 ---

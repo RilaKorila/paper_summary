@@ -79,7 +79,6 @@ python main.py https://www.nature.com/articles/s41586-023-06924-6
 title: "論文タイトル"
 authors: [著者名]
 year: 2025
-tags: []
 status: "未読"
 pdf: "URL"
 ---
